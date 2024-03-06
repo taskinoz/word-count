@@ -1,0 +1,57 @@
+body {
+    background-color: #e0e5ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.neuromorphic-textarea {
+    width: 300px;
+    height: 150px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    background: #e0e5ec;
+    box-shadow: 8px 8px 15px #a3b1c6, -8px -8px 15px #ffffff;
+    resize: none;
+    outline: none;
+}
+
+.radio-buttons {
+    margin-bottom: 20px;
+}
+
+.radio-buttons input[type="radio"] {
+    display: none;
+}
+
+.radio-buttons label {
+    background: #e0e5ec;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 0 5px;
+    box-shadow: 5px 5px 10px #a3b1c6, -5px -5px 10px #ffffff;
+    cursor: pointer;
+}
+
+.radio-buttons input[type="radio"]:checked+label {
+    box-shadow: inset 5px 5px 10px #a3b1c6, inset -5px -5px 10px #ffffff;
+}
+
+.result {
+    margin-top: 20px;
+    background: #e0e5ec;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #a3b1c6, -5px -5px 10px #ffffff;
+}

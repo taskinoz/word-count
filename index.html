@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="radio-buttons">
+            <input type="radio" id="words" name="countType" value="words" checked>
+            <label for="words">Words</label>
+
+            <input type="radio" id="characters" name="countType" value="characters">
+            <label for="characters">Characters</label>
+
+            <input type="radio" id="both" name="countType" value="both">
+            <label for="both">Both</label>
+        </div>
+        <textarea id="textArea" class="neuromorphic-textarea"></textarea>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
