@@ -1,5 +1,26 @@
+:root {
+    --primary-color: #e0e5ec;
+    --secondary-color: #a3b1c6;
+    --tertiary-color: #ffffff;
+    --text-colour: #000000;
+    --scroll-colour: #000000;
+    --scroll-background: #ffffff;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #1a1a1a;
+        --secondary-color: #2d2d2d;
+        --tertiary-color: #000000;
+        --text-colour: #ffffff;
+        --scroll-colour: #ffffff;
+        --scroll-background: #000000;
+    }
+}
+
 body {
-    background-color: #e0e5ec;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,6 +28,7 @@ body {
     margin: 0;
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
+    color: var(--text-colour);
 }
 
 .container {
@@ -14,6 +36,7 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    font-size: 1.1rem;
 }
 
 .neuromorphic-textarea {
@@ -22,11 +45,15 @@ body {
     margin-top: 10px;
     border: none;
     border-radius: 20px;
-    padding: 10px;
-    background: #e0e5ec;
-    box-shadow: 8px 8px 15px #a3b1c6, -8px -8px 15px #ffffff;
+    padding: 20px;
+    background: var(--primary-color);
+    box-shadow: 8px 8px 15px var(--secondary-color), -8px -8px 15px var(--tertiary-color);
     resize: none;
     outline: none;
+    color: var(--text-colour);
+    font-size: 1.2rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-colour) var(--scroll-background);
 }
 
 @media screen and (max-width: 768px) {
@@ -45,24 +72,24 @@ body {
 }
 
 .radio-buttons label {
-    background: #e0e5ec;
+    background: var(--primary-color);
     padding: 10px;
     border-radius: 10px;
     border: none;
     margin: 0 5px;
-    box-shadow: 5px 5px 10px #a3b1c6, -5px -5px 10px #ffffff;
+    box-shadow: 5px 5px 10px var(--secondary-color), -5px -5px 10px var(--tertiary-color);
     cursor: pointer;
 }
 
 .radio-buttons input[type="radio"]:checked+label {
-    box-shadow: inset 5px 5px 10px #a3b1c6, inset -5px -5px 10px #ffffff;
+    box-shadow: inset 5px 5px 10px var(--secondary-color), inset -5px -5px 10px var(--tertiary-color);
 }
 
 .result {
     margin-top: 20px;
-    background: #e0e5ec;
+    background: var(--primary-color);
     display: inline-block;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px #a3b1c6, -5px -5px 10px #ffffff;
+    box-shadow: 5px 5px 10px var(--secondary-color), -5px -5px 10px var(--tertiary-color);
 }
