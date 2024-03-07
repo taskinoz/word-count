@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Counter</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
+        <h1>Text Counter</h1>
         <div class="radio-buttons">
             <input type="radio" id="words" name="countType" value="words" checked>
             <label for="words">Words</label>
@@ -21,7 +26,7 @@
             <label for="both">Both</label>
         </div>
         <textarea id="textArea" class="neuromorphic-textarea"></textarea>
-        <div id="result" class="result"></div>
+        <div id="result" class="result">Words: 0</div>
     </div>
     <script src="script.js"></script>
 </body>

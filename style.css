@@ -5,16 +5,20 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .container {
     text-align: center;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .neuromorphic-textarea {
-    width: 300px;
-    height: 150px;
+    width: 50vw;
+    height: 20vw;
     margin-top: 10px;
     border: none;
     border-radius: 20px;
@@ -23,6 +27,13 @@ body {
     box-shadow: 8px 8px 15px #a3b1c6, -8px -8px 15px #ffffff;
     resize: none;
     outline: none;
+}
+
+@media screen and (max-width: 768px) {
+    .neuromorphic-textarea {
+        width: 80vw;
+        height: 40vw;
+    }
 }
 
 .radio-buttons {
